@@ -1,0 +1,1267 @@
+/* =========================================
+   VICTOR WEALTH AQOREEN
+   PREMIUM GOSPEL ARTIST WEBSITE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #050505;
+
+    color: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 1000;
+
+    background: rgba(5,5,5,.75);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+
+.logo {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.logo span {
+    color: #d6a84f;
+}
+
+
+.navbar nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.navbar nav a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: .3s;
+}
+
+
+.navbar nav a:hover {
+    color: #d6a84f;
+}
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 680px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #000000;
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+}
+
+
+.eyebrow {
+    color: #d6a84f;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(75px, 12vw, 150px);
+
+    line-height: .8;
+
+    letter-spacing: -6px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero h1 span {
+    color: #d6a84f;
+}
+
+
+.hero-text {
+    max-width: 600px;
+
+    color: #bbb;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.gold-button,
+.outline-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    transition: .3s;
+}
+
+
+.gold-button {
+    background: #d6a84f;
+
+    color: #000;
+}
+
+
+.gold-button:hover {
+    background: #ffffff;
+
+    transform: translateY(-4px);
+}
+
+
+.outline-button {
+    border: 1px solid rgba(255,255,255,.4);
+
+    color: white;
+}
+
+
+.outline-button:hover {
+    background: white;
+
+    color: black;
+}
+
+
+.scroll-text {
+    position: absolute;
+
+    bottom: 30px;
+
+    right: 7%;
+
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+section {
+    padding: 120px 8%;
+}
+
+
+.section-label {
+    color: #d6a84f;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 60px;
+}
+
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 85px);
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading h2 span {
+    color: #d6a84f;
+}
+
+
+.section-heading > p:last-child {
+    color: #888;
+
+    font-size: 16px;
+}
+
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+    background: #090909;
+}
+
+
+.about-image {
+    min-height: 600px;
+
+    overflow: hidden;
+}
+
+
+.about-image img {
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    transition: .6s;
+}
+
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+
+
+.about-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+
+.about-content h2 span {
+    color: #d6a84f;
+}
+
+
+.about-content p:not(.section-label) {
+    color: #999;
+
+    margin-bottom: 20px;
+
+    max-width: 600px;
+}
+
+
+.artist-stats {
+    display: flex;
+
+    gap: 50px;
+
+    margin-top: 45px;
+}
+
+
+.artist-stats div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.artist-stats strong {
+    color: #d6a84f;
+
+    font-size: 28px;
+}
+
+
+.artist-stats span {
+    color: #777;
+
+    font-size: 11px;
+
+    margin-top: 5px;
+}
+
+
+
+/* =========================================
+   MUSIC
+========================================= */
+
+.music {
+    background: #050505;
+}
+
+
+.music-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 18px;
+}
+
+
+.music-card {
+    min-height: 300px;
+
+    padding: 35px;
+
+    border: 1px solid #222;
+
+    background: #0a0a0a;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    transition: .4s;
+}
+
+
+.music-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #d6a84f;
+}
+
+
+.music-number {
+    color: #555;
+
+    margin-bottom: auto;
+}
+
+
+.music-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+}
+
+
+.music-card p {
+    color: #777;
+
+    margin: 5px 0 25px;
+}
+
+
+.music-card a {
+    color: #d6a84f;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+
+/* =========================================
+   VIDEOS
+========================================= */
+
+.videos {
+    background: #090909;
+}
+
+
+.video-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+}
+
+
+.video-card {
+    overflow: hidden;
+}
+
+
+.video-placeholder {
+    height: 260px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #181818,
+            #050505
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #222;
+
+    transition: .4s;
+}
+
+
+.video-placeholder span {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #d6a84f;
+
+    color: black;
+}
+
+
+.video-card:hover .video-placeholder {
+    border-color: #d6a84f;
+}
+
+
+.video-card h3 {
+    margin-top: 18px;
+}
+
+
+.video-card p {
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================================
+   BAND
+========================================= */
+
+.band {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.95),
+            rgba(0,0,0,.5),
+            rgba(0,0,0,.9)
+        ),
+        url("premium-live-band.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.band-content {
+    max-width: 750px;
+}
+
+
+.band h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px,7vw,90px);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+
+.band h2 span {
+    color: #d6a84f;
+}
+
+
+.band p:not(.section-label) {
+    color: #aaa;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+    background: #050505;
+
+    text-align: center;
+}
+
+
+.contact-heading {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.contact-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px,6vw,75px);
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+
+.contact-heading h2 span {
+    color: #d6a84f;
+}
+
+
+.contact-heading > p:last-child {
+    color: #777;
+}
+
+
+.contact-form {
+    max-width: 850px;
+
+    margin: 55px auto 0;
+
+    text-align: left;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    margin-bottom: 15px;
+
+    padding: 18px;
+
+    background: #0d0d0d;
+
+    color: white;
+
+    border: 1px solid #222;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d6a84f;
+}
+
+
+.contact-form button {
+    padding: 17px 30px;
+
+    background: #d6a84f;
+
+    color: #000;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+
+.contact-form button:hover {
+    background: white;
+}
+
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 60px 8%;
+
+    text-align: center;
+
+    border-top: 1px solid #181818;
+
+    background: #030303;
+}
+
+
+.footer-logo {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+
+.footer-logo span {
+    color: #d6a84f;
+}
+
+
+footer > p {
+    color: #666;
+
+    margin-top: 10px;
+}
+
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 25px 0;
+}
+
+
+.social-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: .3s;
+}
+
+
+.social-links a:hover {
+    color: #d6a84f;
+}
+
+
+.copyright {
+    font-size: 10px;
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+
+    .hero {
+        padding: 120px 25px 80px;
+    }
+
+
+    .hero h1 {
+        font-size: 75px;
+
+        letter-spacing: -3px;
+    }
+
+
+    section {
+        padding: 80px 25px;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .about-image,
+    .about-image img {
+        height: 450px;
+
+        min-height: 450px;
+    }
+
+
+    .artist-stats {
+        gap: 25px;
+    }
+
+
+    .music-grid,
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .scroll-text {
+        display: none;
+    }
+
+}
+/* BOOKING EMAIL BUTTON */
+
+.booking-email {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.booking-email p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 15px 28px;
+
+    background: #d6a84f;
+    color: #050505;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all .3s ease;
+}
+
+.email-button span {
+    font-size: 20px;
+    transition: .3s;
+}
+
+.email-button:hover {
+    background: #ffffff;
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(214,168,79,.2);
+}
+
+.email-button:hover span {
+    transform: translateX(6px);
+}
+.hero {
+    min-height: 850px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+
+    /* BAND BACKGROUND IMAGE */
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.75) 45%,
+            rgba(0, 0, 0, 0.35) 100%
+        ),
+        url("victor\ wealth\ 2.png");
+
+    background-size: 100% auto;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-label {
+    color: #d9a441;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d9a441;
+}
+
+.hero-text {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #d9a441;
+    color: #000;
+    padding: 16px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* =========================
+   ABOUT THE BAND
+========================= */
+
+.about-band {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 7%;
+}
+
+.about-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.about-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.90) 0%,
+            rgba(0, 0, 0, 0.70) 50%,
+            rgba(0, 0, 0, 0.35) 100%
+        );
+    z-index: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.about-content .section-label {
+    color: #d9a441;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    color: white;
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.about-content h2 span {
+    display: block;
+    color: #d9a441;
+}
+
+.about-content p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-content .email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 16px 25px;
+    background: #d9a441;
+    color: #000;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.about-content .email-button span {
+    font-size: 20px;
+}
+/* =========================
+   LISTEN SECTION
+========================= */
+
+.listen-section {
+    padding: 100px 20px;
+    background: #0d0d0d;
+    text-align: center;
+}
+
+.listen-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.listen-section .section-label {
+    color: #f5c542;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.listen-section h2 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.listen-section h2 span {
+    color: #f5c542;
+}
+
+.listen-text {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* BUTTON CONTAINER */
+
+.listen-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* BUTTONS */
+
+.listen-btn {
+    width: 220px;
+    padding: 22px 25px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: 0.3s ease;
+    background: #151515;
+}
+
+.listen-btn span {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.listen-btn small {
+    color: #999;
+    font-size: 13px;
+}
+
+
+/* HOVER */
+
+.listen-btn:hover {
+    transform: translateY(-7px);
+    border-color: #f5c542;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+
+/* SPOTIFY */
+
+.listen-btn.spotify:hover {
+    background: #151515;
+}
+
+
+/* YOUTUBE */
+
+.listen-btn.youtube:hover {
+    background: #151515;
+}
+
+
+/* AUDIOMACK */
+
+.listen-btn.audiomack:hover {
+    background: #151515;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .listen-section h2 {
+        font-size: 34px;
+    }
+
+    .listen-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listen-btn {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+    .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #25D366;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    z-index: 9999;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-button span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.social-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.social-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.social-section p {
+    margin-bottom: 25px;
+    color: #777;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 22px;
+
+    border-radius: 30px;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-button i {
+    font-size: 22px;
+}
+
+/* YouTube */
+.youtube {
+    background: #ff0000;
+}
+
+/* Instagram */
+.instagram {
+    background: linear-gradient(45deg, #feda75, #d62976, #4f5bd5);
+}
+
+/* TikTok */
+.tiktok {
+    background: #000;
+}
+
+.social-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
